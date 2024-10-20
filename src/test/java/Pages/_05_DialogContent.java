@@ -10,9 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
-public class DialogContent extends ParentPage {
+public class _05_DialogContent extends ParentPage {
 
-    public DialogContent() {
+    public _05_DialogContent() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
