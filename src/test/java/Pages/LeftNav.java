@@ -11,46 +11,59 @@ public class LeftNav extends ParentPage{
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
-    @FindBy(xpath="(//span[text()='Setup'])[1]")
-    public WebElement setup;
+    @FindBy(xpath = "//ul[@class='leftmenu']/li[text()='Solutions']")
+    public WebElement solutions;
 
-    @FindBy(xpath="(//span[text()='Parameters'])[1]")
-    public WebElement parameters;
+    @FindBy(xpath = "//ul[@class='leftmenu']/li[text()='About Us']")
+    public WebElement about_us;
 
-    @FindBy(xpath="(//span[text()='Countries'])[1]")
-    public WebElement countries;
+    @FindBy(xpath = "//ul[@class='leftmenu']/li[text()='Services']")
+    public WebElement services;
 
-    @FindBy(xpath = "(//span[text()='Citizenships'])[1]")
-    public WebElement citizenship;
+    @FindBy(xpath = "//ul[@class='leftmenu']/li[text()='Products']")
+    public WebElement products;
 
-    @FindBy(xpath = "(//span[text()='States'])[1]")
-    public WebElement states;
+    @FindBy(xpath = "//ul[@class='leftmenu']/li[text()='Locations']")
+    public WebElement locations;
 
-    @FindBy(xpath = "(//span[text()='Nationalities'])[1]")
-    public WebElement nationalities;
+    @FindBy(xpath = "//ul[@class='leftmenu']/li[text()='Admin Page']")
+    public WebElement admin_page;
 
-    @FindBy(xpath = "//span[text()='Fees']")
-    public WebElement fees;
+    @FindBy(xpath = "//div[@class='login']/input[@name='username']")
+    public WebElement userName;
 
-    @FindBy(xpath = "(//span[text()='Cities'])[1]")
-    public WebElement cities;
+    @FindBy(xpath = "//div[@class='login']/input[@name='password']")
+    public WebElement password;
 
-    public WebElement getWebElement(String strElementName){
+    @FindBy(xpath = "//div[@class='login']/input[@value='Log In']")
+    public WebElement login;
 
-        switch (strElementName)
-        {
-            case "setup" : return this.setup;
-            case "parameters" : return this.parameters;
-            case "countries" : return this.countries;
-            case "citizenship" : return this.citizenship;
-            case "states" : return this.states;
-            case "nationalities" : return this.nationalities;
-            case "fees" : return this.fees;
-            case "cities" : return this.cities;
-        }
 
-        return null;
-    }
+    @FindBy(xpath = "//div[@id='loginPanel']/p/a[text()='Register']")
+    public WebElement register;
 
+    @FindBy(xpath = "//div[@id='leftPanel']/ul//a[text()='Open New Account']")
+    public WebElement openNewAccount;
+
+    @FindBy(xpath = "//div[@id='leftPanel']/ul//a[text()='Accounts Overview']")
+    public WebElement accountsOverview;
+
+    @FindBy(xpath = "//div[@id='leftPanel']/ul//a[text()='Transfer Funds']")
+    public WebElement transferFunds;
+
+    @FindBy(xpath = "//div[@id='leftPanel']/ul//a[text()='Bill Pay']")
+    public WebElement billPay;
+
+    @FindBy(xpath = "//div[@id='leftPanel']/ul//a[text()='Find Transactions']")
+    public WebElement findTransactions;
+
+    @FindBy(xpath = "//div[@id='leftPanel']/ul//a[text()='Update Contact Info']")
+    public WebElement updateContactInfo;
+
+    @FindBy(xpath = "//div[@id='leftPanel']/ul//a[text()='Request Loan']")
+    public WebElement requestLoan;
+
+    @FindBy(xpath = "//div[@id='leftPanel']/ul//a[text()='Log Out']")
+    public WebElement logOut;
 
 }
