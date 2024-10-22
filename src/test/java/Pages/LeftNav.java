@@ -66,4 +66,16 @@ public class LeftNav extends ParentPage{
     @FindBy(xpath = "//div[@id='leftPanel']/ul//a[text()='Log Out']")
     public WebElement logOut;
 
+
+    public WebElement getWebElement(String strElementName){
+
+        switch (strElementName)
+        {
+            case "register": return this.register;
+
+        }
+
+        return null;
+    }
+
 }
