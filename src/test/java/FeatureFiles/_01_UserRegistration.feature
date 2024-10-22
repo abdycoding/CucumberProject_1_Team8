@@ -19,7 +19,7 @@ Feature: Registration Functionality
       | zipCode     | 663200                        |
       | phoneNumber | +614589652636                 |
       | ssn         | 9968553                       |
-      | userName    | Rashy7                        |
+      | userName    | Rashy9                        |
       | password    | Invincibles                   |
       | confirm     | Invincibles                   |
 

@@ -18,5 +18,6 @@ public class _01_RegistrationStep {
     @Then("Success message should be displayed")
     public void successMessageShouldBeDisplayed() {
             dc.verifyMessageContainsText("success");
+            GWD.quitDriver();
     }
 }
