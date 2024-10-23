@@ -72,7 +72,7 @@ public class LeftNav extends ParentPage{
         switch (strElementName)
         {
             case "register": return this.register;
-
+            case "openNewAccout": return  this.openNewAccount;
         }
 
         return null;
