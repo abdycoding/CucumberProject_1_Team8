@@ -21,8 +21,6 @@ The following user stories will guide our sprint tasks:
 - **US607 | Contact Information Update**: Verify the process of updating contact information.
 - **US608 | Loan Application**: Test the loan application process and its outcomes.
 
-> **Note**: Detailed user stories will be provided in an attached Excel file.
-
 ## Project Objectives
 - **Enhancing Functional Test Automation**: The primary goal is to automate functional UI tests, verifying the functionality of the Parabank web application through automated scenarios.
 - **Sprint Mode**: As with previous sprints, the aim is to complete specific functional tests within a set timeframe and achieve automation for certain parts of the application.
