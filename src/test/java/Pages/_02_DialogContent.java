@@ -17,4 +17,12 @@ public class _02_DialogContent extends ParentPage {
     }
     // locatorlar bu satırdan alta yazılacak.
     // locators should be written down under this line
-}
+
+    @FindBy(xpath = "//*[text()='Accounts Overview']")
+    public WebElement message;
+
+    public void MessageContainsText(String value){
+        Assert.assertTrue( this.message.getAttribute("Account").toLowerCase().contains(value.toLowerCase()));
+
+    }
+    }
