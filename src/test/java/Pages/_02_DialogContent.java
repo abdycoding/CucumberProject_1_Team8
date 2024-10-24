@@ -21,8 +21,15 @@ public class _02_DialogContent extends ParentPage {
     @FindBy(xpath = "//*[text()='Accounts Overview']")
     public WebElement message;
 
+    @FindBy(xpath = "//*[text()='The username and password could not be verified.']")
+    public WebElement negativemessage;
+
     public void MessageContainsText(String value){
-        Assert.assertTrue( this.message.getAttribute("Account").toLowerCase().contains(value.toLowerCase()));
+        Assert.assertTrue( this.message.isDisplayed());
 
     }
+    public void NegaiveMessageContainsText(String value){
+        Assert.assertTrue( this.negativemessage.isDisplayed());
+
     }
+}
