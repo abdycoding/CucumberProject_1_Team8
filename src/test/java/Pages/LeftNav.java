@@ -73,6 +73,17 @@ public class LeftNav extends ParentPage{
         {
             case "register": return this.register;
             case "openNewAccout": return  this.openNewAccount;
+            case "userName":return  this.userName;
+            case "password": return this.password;
+            case "login": return this.login;
+            case "accountsOverview": return this.accountsOverview;
+            case "transferFunds": return this.transferFunds;
+            case "billPay": return this.billPay;
+            case "findTransactions": return this.findTransactions;
+            case "updateContactInfo": return this.updateContactInfo;
+            case "requestLoan": return this.requestLoan;
+            case "logOut": return this.logOut;
+
         }
 
         return null;
