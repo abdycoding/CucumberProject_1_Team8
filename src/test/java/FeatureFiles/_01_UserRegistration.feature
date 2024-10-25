@@ -3,7 +3,7 @@ Feature: Registration Functionality
   Background:
     Given Navigate to the Website
 
-  @SmokeTest
+  @SmokeTest @RegressionTest
   Scenario: Register into the Website
 
     And Click on the Element in LeftNav

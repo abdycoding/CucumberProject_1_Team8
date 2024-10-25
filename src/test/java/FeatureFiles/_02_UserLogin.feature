@@ -1,6 +1,6 @@
 Feature: Login Functionality
 
-  @SmokeTest
+  @SmokeTest @RegressionTest
   Scenario: Login to the website
 
     Given Navigate to the Website

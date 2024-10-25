@@ -6,11 +6,10 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
             tags = "@RegressionTest",
-            features = {"src/test/java/FeatureFiles/_01_UserRegistration.feature",
+            features = {
                     "src/test/java/FeatureFiles/_02_UserLogin.feature",
                     "src/test/java/FeatureFiles/_03_BillPaymentFunctionality.feature",
-                    "src/test/java/FeatureFiles/_04_AccountCreation.feature",
-                    "src/test/java/FeatureFiles/_07_LoanApplication.feature"},
+                    "src/test/java/FeatureFiles/_04_AccountCreation.feature"},
             glue = {"StepDefinitions"},
             plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
     )

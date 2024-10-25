@@ -4,7 +4,7 @@ Feature: Account Creation Functionality
     Given Navigate to the Website
     When Enter username and password to login
 
-  @SmokeTest
+  @SmokeTest @RegressionTest
   Scenario Outline: Open a Bank Account
 
     And Click on the Element in LeftNav
