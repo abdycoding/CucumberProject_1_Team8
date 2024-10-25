@@ -1,5 +1,6 @@
 Feature: Login Functionality
 
+  @SmokeTest
   Scenario: Login to the website
 
     Given Navigate to the Website

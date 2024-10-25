@@ -1,5 +1,6 @@
 Feature: Payment Functuanility
 
+  @SmokeTest
   Scenario: Pay the Bills
     Given Navigate to the Website
     When Enter username and password to login
