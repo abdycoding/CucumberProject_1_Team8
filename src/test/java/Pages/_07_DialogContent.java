@@ -34,9 +34,6 @@ public class _07_DialogContent extends ParentPage {
     @FindBy(xpath = "//a[@id='newAccountId']")
     public WebElement newAccountNumberLink;
 
-    @FindBy(xpath = "//p[contains(text(),'You do not')]")
-    public WebElement denialMessage; //You do not have sufficient funds for the given down payment.
-
     @FindBy(xpath = "//p[contains(text(),'approved')]")
     public WebElement approvalMessage; //Congratulations, your loan has been approved.
 
