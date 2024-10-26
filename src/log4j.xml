@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+       <loggers>
+        <Root level="INFO">
+            <!-- log'ları konsola (sistem çıktısına) yönlendirme -->
+            <AppenderRef ref="LogToConsole"/> <!-- Konsola log yazılması sağlanıyor -->
+            <!-- log'ları bir dosyaya yönlendirme -->
+            <AppenderRef ref="LogToFile"/>    <!-- Loglar bir dosyaya yazılacak -->
+        </Root>
+    </loggers>
+
+    <Appenders>
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level - %msg\n"/>
+        </Console>
+
+        <!-- Logların dosyaya yazılmasını tanımlar -->
+        <File name="LogToFile" fileName="logs/app.log">
+            <!-- Dosya çıktısının formatı (Tarih, Seviye, Mesaj): -->
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %msg\n"/>
+        </File>
+    </Appenders>
+</configuration>
+
